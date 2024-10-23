@@ -1,0 +1,12 @@
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+
+jobs:
+  job_name_here:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Current Time"
+        run: echo "The current time is $(date)"
+      - name: "Print Name"
+        run: echo "Parth Sundarka JOD"

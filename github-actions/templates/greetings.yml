@@ -1,4 +1,4 @@
-name: Greetings
+name: Greetings Test
 
 on: [pull_request_target, issues]
 
@@ -9,9 +9,8 @@ jobs:
       issues: write
       pull-requests: write
     steps:
-    # https://github.com/actions/first-interaction
     - uses: actions/first-interaction@v1
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-message: "Message that will be displayed on users' first issue"
-        pr-message: "Message that will be displayed on users' first pull request"
+        issue-message: "Nice to see your first issue here"
+        pr-message: "Congrats on your first PR"
